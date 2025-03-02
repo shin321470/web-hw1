@@ -4,29 +4,27 @@
   <meta charset="UTF-8">
   <title>403 error page</title>
 </head>
-
 <style>
     body {
         background-image: url('material/background.png'); /* 设置背景图像 */
         background-size: cover;  /*使背景图像覆盖整个页面*/
     }
 
-    /* 主要内容容器，仿木质破损告示牌 */
+    /*资讯窗口*/
     .container {
       max-width: 600px; /* 限制最大宽度 */
-      top: 15vh; /* 将容器下移至屏幕的三分之一 */
-      left: 10vh; /* 水平居中 */
+      position: relative; /* 允许子元素定位 */
+      top: 10vh; /* 将窗口下移 */
+      left: 15vh; /* 水平左移动 */
       background-color: #eca239; /* 设置背景颜色 */
-      background: #b47d31 url('/material/Logo.webp') no-repeat center center/cover; /* 添加背景颜色和背景图片 */
+      background: #b47d31 url('material/Logo.webp') no-repeat center center/cover; /* 添加背景颜色和背景图片 */
       padding: 40px; /* 内边距 */
       border-radius: 10px; /* 圆角边框 */
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7); /* 添加阴影效果 */
       border: 5px solid #8b5e3b; /* 边框颜色 */
-
-      position: relative; /* 允许子元素定位 */
     }
 
-    /* 403标题，仿木制牌子风格 */
+    /* 403文字样式 */
     h1 {
       font-size: 100px; /* 文字大小 */
       margin: 0; /* 去除外边距 */
@@ -61,12 +59,12 @@
       color: black; /* 悬停时文字颜色改变 */
       box-shadow: 6px 6px 0 #8b5e3b; /* 悬停时阴影变化 */
     }
-
 </style>
 <body>
   <!-- 主要内容区域 -->
   <div class="container">
     <h1>403</h1> <!-- 403 错误码 -->
+    <p>紧急通告：因未知魔物突袭，公会技术人员正全力进行讨伐，请各位猎人耐心等待！</p> <!-- 提示信息 -->
     <a href="https://www.monsterhunter.com/wilds/zh-hans/" class="button">返回营地</a> <!-- 返回主页按钮，修改为跳转到官網主頁 -->
   </div>
 </body>
